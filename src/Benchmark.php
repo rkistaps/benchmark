@@ -46,7 +46,7 @@ class Benchmark
             throw new BenchmarkException("No anonymous benchmark running");
         }
 
-        if (!is_null($name) && !in_array($name, $this->stack)) {
+        if (!is_null($name) && !isset($this->stack[$name])) {
             throw new BenchmarkException('Benchmark with name ' . $name . ' not running');
         }
 

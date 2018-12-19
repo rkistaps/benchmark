@@ -14,8 +14,16 @@
             "rkistaps\\benchmark\\": "src/"
         }
     },
+    "autoload-dev": {
+      "psr-4": {
+        "tests\\": "tests/"
+      }
+    },
     "require": {
         "php": "^7.1",
         "bagf/juration-php": "^0.0.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
     }
 }

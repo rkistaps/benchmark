@@ -1,0 +1,21 @@
+{
+    "name": "rkistaps/benchmark",
+    "description": "Benchmark",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kristaps Taube",
+            "email": "kristaps.taube@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "rkistaps\\benchmark\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "bagf/juration-php": "^0.0.1"
+    }
+}

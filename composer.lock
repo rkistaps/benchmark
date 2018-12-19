@@ -1,0 +1,47 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f2f3eaa88f5587b8c3eec5468710cf5c",
+    "packages": [
+        {
+            "name": "bagf/juration-php",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bagf/juration-php.git",
+                "reference": "a391fe304bb948fba15fb6d4811359bea1ded9c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bagf/juration-php/zipball/a391fe304bb948fba15fb6d4811359bea1ded9c6",
+                "reference": "a391fe304bb948fba15fb6d4811359bea1ded9c6",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Juration\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Duration string to time in seconds parser",
+            "time": "2017-05-27T16:30:32+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.1"
+    },
+    "platform-dev": []
+}

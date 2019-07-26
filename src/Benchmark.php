@@ -2,6 +2,8 @@
 
 namespace rkistaps\benchmark;
 
+use Closure;
+
 /**
  * Class Benchmark
  * @package rkistaps\benchmark
@@ -64,19 +66,20 @@ class Benchmark
     }
 
     /**
-     * @param callable $callable
+     * Measure closure execution time
+     * @param Closure $callable $callable
      * @return BenchmarkResult
      * @throws BenchmarkException
      */
-    public function run(callable $callable): BenchmarkResult
+    public static function measure(Closure $callable): BenchmarkResult
     {
-        $arguments = func_get_args();
-        array_shift($arguments);
+        $bench = new Benchmark();
 
         $key = uniqid();
-        $this->start($key);
-        call_user_func_array($callable, $arguments);
+        $bench->start($key);
 
-        return $this->end($key);
+        $callable();
+
+        return $bench->end($key);
     }
 }
